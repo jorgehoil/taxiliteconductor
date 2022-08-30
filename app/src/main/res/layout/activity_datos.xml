@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDatos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imPerfil"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/imgavatar"
+                tools:srcCompat="@drawable/imgavatar" />
+
+            <Button
+                android:id="@+id/btnRotar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ic_rotar_derecha" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre" />
+
+            <EditText
+                android:id="@+id/edNombreTaxista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teléfono" />
+
+            <EditText
+                android:id="@+id/edTelefonoTaxista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo" />
+
+            <EditText
+                android:id="@+id/edCorreoTaxista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <Switch
+                android:id="@+id/swCambiaPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cambiar Contraseña" />
+
+            <TextView
+                android:id="@+id/tvContrasenaAnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contraseña anterior"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edContrasenaAnterior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName|textPassword"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvContrasenaNueva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nueva contraseña"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName|textPassword"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvConfirmaContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="Confirma contraseña"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edConfirmaContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName|textPassword"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnGuardaDatosTaxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GUARDAR" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
